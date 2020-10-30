@@ -47,7 +47,7 @@ Take a look at the [MDN Documentation on `Event.preventDefault`][mdn-pd]. You'll
 
 If you finish early, try to implement one or more of the following:
 
-- A delete function that will remove tasks from your list
+- A delete function that will remove tasks from your list 
 - A priority value selected from a dropdown that is used to determine the color of the text in the list (e.g. red for high priority, yellow for medium, green for low)
   - As a challenge, implement a sorting functionality that displays the tasks ascending or descending order based on priority
 - An additional input field (e.g. user, duration, date due)

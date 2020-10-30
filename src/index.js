@@ -10,10 +10,11 @@ const createNewTask = (event) => {
   const taskDescription = taskFormData.get('new-task-description')
   
   const newTask = document.createElement('li')
-  newTask.innerText = taskDescription
+  newTask.innerHTML = taskDescription
   
   const removeButton = document.createElement('button')
   removeButton.innerText = "X"
+  removeButton.addEventListener('click', removeTask)
 
   newTask.appendChild(removeButton)
   taskList.appendChild(newTask)
@@ -22,8 +23,6 @@ const createNewTask = (event) => {
 
 taskCreateForm.addEventListener('submit', createNewTask)
 
-taskList.addEventListener('click', (event) => {
-  const task = document.querySelector('li')
-  
-  task.remove()
-})
+const removeTask = (event) => {
+  event.target.parentNode.remove()
+}
