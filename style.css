@@ -41,14 +41,14 @@ button {
   box-shadow: 2px 5px 5px #333;
 }
 
-#Low {
+.Low {
   color: green;
 }
 
-#Medium {
+.Medium {
   color: orange;
 }
 
-#High {
+.High {
   color: red;
 }
